@@ -44,7 +44,7 @@
       color:  #123456;
   }
   .rem{
-      margin-left: 25%;
+    
       color:  #123456;
   }
   
@@ -380,6 +380,15 @@
     float: right;
     margin-right: 5%;
 } 
+.check{
+ margin-left: 21%;
+ margin-top: 3%;
+ text-decoration: none;
+ background-color:#123456;
+
+}
+
+ 
 .blue{
     height: 10%;
     font-size: 0.7rem;

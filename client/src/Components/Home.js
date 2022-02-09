@@ -1,7 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/home.css'
 import img from "./images/voucher_img.png"
+import axios from "axios"
 const Home=()=>{
+
+    const[email,setEmail]=useState("");
+    const[password,setPassword]=useState("");
+
+    const login=(e)=>{
+        e.preventDefault();
+        
+
+        if (
+            !(
+              email === "" ||
+              password===""
+            )
+          ) 
+
+       { axios
+        .post('https://reqres.in/api/login',{
+            email:email,
+            password:password,
+        })
+        .then((res)=>{
+            console.log(res);
+            console.log("Login Successfull")
+                alert("Login Successfull");
+
+            
+        })
+        .catch((err)=>{
+            console.log(err);
+        });
+    }
+    else if(email===""){
+        console.log("Email missing")
+        alert("Missing Email")
+      
+    }
+    else if(password===""){
+        console.log("Password missing")
+        alert("Missing Password")
+     
+    }
+    else{
+        alert("Please enter valid details")
+    }
+
+    }
     return(
         <div className='home'>
             <div className='buttons'>
@@ -19,19 +66,19 @@ const Home=()=>{
         <div className="Sign_In">Welcome Back</div>
         <div className="sign_">
           <form
-            // onSubmit={this.onSubmitHandler.bind(this)}
-            // method="post"
+            method="post"
             className="sign_container"
           >
             <input
-            //   onChange={this.firstNameInputChangeHandler}
+              onChange={(e)=>setEmail(e.target.value)}
               name="email"
               className="enter_sign"
               type="email"
               placeholder="Email Address*"
             ></input>
             <input
-            //   onChange={this.lastNameInputChangeHandler}
+               
+               onChange={(e)=>setPassword(e.target.value)}
               name="password"
               className="enter_pass"
               type="password"
@@ -41,14 +88,15 @@ const Home=()=>{
             
 
             
-            <button type="submit" name="submit" className="button_sign">
+            <button onClick={login} type="submit" name="submit" className="button_sign">
               Login
             </button>
             
            </form>
            <div className='lower'>
 
-            <p className='rem'>Remember Password</p>
+            <input checked="checked" className='check' type="checkbox" ></input>
+            <p className='rem' >Remember Password</p>
             <p className='Forgot'>Forgot Password?</p>
             </div>
         </div>
