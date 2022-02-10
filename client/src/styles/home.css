@@ -18,7 +18,7 @@
       "Lucida Sans", Arial, sans-serif; */
     font-weight: bold;
     margin-top: 100px;
-    margin-left: 10%;
+    margin-left: 6%;
     
    
   }
@@ -40,19 +40,21 @@
   }
 
   .Forgot{
-      margin-left: 17%;
+      margin-left: 14%;
       color:  #123456;
+      margin-top: 2%;
   }
   .rem{
     
       color:  #123456;
+      margin-top: 2%;
   }
   
   .button_sign {
     background-color: #123456;
     margin-left: -30%;
     color: white;
-    width: 540%;
+    width: 500%;
     margin-left: -190%;
     margin-top: 30px;
     padding: 10px;
@@ -80,6 +82,8 @@
     margin-left: -190%;
     padding: 10px;
     width: 500%;
+    
+    
     
     
   }
@@ -150,7 +154,7 @@
     color: #FF8C00;
     font-weight: bold;
     font-size: 2rem;
-    margin-top: 12%;
+    margin-top: -16%;
     margin-left: 1%;
 }
 .head{
@@ -161,9 +165,11 @@
 @media(max-width:380px){
   .login{
     margin-left: -40%;
-    
-  
-}
+    }
+
+  .image{
+    margin-left: -30%;
+  }
   .buttons{
    margin-top: -30%;
   }
@@ -173,30 +179,13 @@
   
   }
 
-
-
 }
-@media(max-width:365px){
+
+
+
+@media(max-width:400px){
   .login{
-    margin-left: -90%;
-  
-}
-  .buttons{
-   margin-top: -30%;
-  }
-  .Sign_In{
-    align-items: center;
-    text-align: center;
-  
-  }
-
-
-
-}
-
-/* @media(max-width:400px){
-  .login{
-    margin-left: -45.5%;
+    margin-left: -40.5%;
     margin-top: 30%;
     
     
@@ -209,10 +198,10 @@
     text-align: center;
   
   }
-} */
+}
 @media(max-width:420px){
   .login{
-    margin-left: -31%;
+    margin-left: -34.5%;
     margin-top: 29.4%;
     
     
@@ -228,116 +217,3 @@
   }
 }
 
-/* @media(max-width:370px){
-  .login{
-    margin-left: -43.5%;
-    margin-top: 24.5%;
-    
-    
-  }
-  .buttons{
-   margin-top: -30%;
-  }
-  .Sign_In{
-    align-items: center;
-    text-align: center;
-  
-  }
-} */
-/* @media(max-width:394px){
-  .login{
-    margin-left: -35.8%;
-    margin-top: 29%;
-    
-    
-  }
-  .buttons{
-   margin-top: -30%;
-  }
-  .Sign_In{
-    align-items: center;
-    text-align: center;
-    margin-left: 7%;
-  
-  }
-} */
-/* @media(max-width:370px){
-  .login{
-    margin-left: -42.8%;
-    margin-top: 29%;
-    
-    
-  }
-  .buttons{
-   margin-top: -30%;
-  }
-  .Sign_In{
-    align-items: center;
-    text-align: center;
-    margin-left: 7%;
-  
-  }
-
-} */
-
-/* @media(max-width:415px){
-  .login{
-    margin-left: -32.8%;
-    margin-top: 30%;
-    
-    
-  }
-  .buttons{
-   margin-top: -30%;
-  }
-  .Sign_In{
-    align-items: center;
-    text-align: center;
-    margin-left: 7%;
-  
-  }
-
-
-
-} */
-/* @media(max-width:830px){
-  .login{
-    margin-left: -12.7%;
-    margin-top: 11.5%;
-    
-    
-  }
-  .buttons{
-   margin-top: -30%;
-  }
-  .Sign_In{
-    align-items: center;
-    text-align: center;
-    margin-left: 7%;
-  
-  }
-
-
-
-} */
-/* @media(max-width:770px){
-  .login{
-    margin-left: 17.7%;
-    margin-top: 26%;
-    
-    
-    
-  }
-  .buttons{
-   margin-top: -30%;
-  }
-  .Sign_In{
-    align-items: center;
-    text-align: center;
-    margin-left: 7%;
-  
-  }
-
-
-
-} */

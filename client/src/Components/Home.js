@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import '../styles/home.css'
 import img from "./images/voucher_img.png"
 import axios from "axios"
+import { message, Button, Space } from 'antd';
+import 'antd/dist/antd.css';
+
+
 const Home=()=>{
 
     const[email,setEmail]=useState("");
@@ -25,23 +29,35 @@ const Home=()=>{
         })
         .then((res)=>{
             console.log(res);
-            console.log("Login Successfull")
-                alert("Login Successfull");
-
-            
-        })
+             console.log("Login Successfull")
+               
+                
+                setTimeout(()=>{
+                  message.success('Login Successfull');
+                },100)
+           })
         .catch((err)=>{
             console.log(err);
         });
     }
     else if(email===""){
         console.log("Email missing")
-        alert("Missing Email")
+        
+        
+        setTimeout(()=>{
+          message.error('Email Missing');
+        },100)
+       
       
     }
     else if(password===""){
         console.log("Password missing")
-        alert("Missing Password")
+       
+       
+        setTimeout(()=>{
+          message.error('Password Missing');
+        },100)
+       
      
     }
     else{
